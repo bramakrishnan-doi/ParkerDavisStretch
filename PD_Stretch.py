@@ -54,6 +54,7 @@ def usgs_data(siteNumber, t1, t2,sel_int = 'HR',parameterCd = '00060'):
     cname = site_info['station_nm'].iloc[0].split(',')[0]
     df.columns = [cname.title() + ' (USGS)']
     df = df.tz_localize(None)
+    df = df.resample('60min').mean()
     return (df)
 
 def bor_usgs(bor,usgs,t1,t2):
