@@ -6,4 +6,4 @@ scipy==1.6.0
 streamlit==0.75.0
 numpy==1.19.5
 beautifulsoup4==4.9.3
-lxml==4.6.2
+lxml>=4.6.3
