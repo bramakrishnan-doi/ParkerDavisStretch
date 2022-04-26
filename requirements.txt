@@ -7,3 +7,4 @@ streamlit==0.75.0
 numpy==1.19.5
 beautifulsoup4==4.9.3
 lxml>=4.6.3
+html5lib==1.1
